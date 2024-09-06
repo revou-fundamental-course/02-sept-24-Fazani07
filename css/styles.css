@@ -1,1 +1,82 @@
 /* ini css */
+
+.main-header {
+    text-align: center;
+}
+
+.selection-content {
+    display: flex;
+    flex-direction: column;
+}
+.selection-btn {
+    height: 32px;
+    border:  none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.mustard-color {
+    background-color: #F9BE4A;
+}
+
+.white-color {
+    background-color: white;
+}
+
+.luas-segitiga-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    background: #39255E;
+    text-align: center;
+    color: white;
+}
+
+.luas-segitiga-contect {
+    display: flex;
+    flex-direction: column;
+}
+
+.luas-segitiga-img {
+    height: 300px;
+    width: 300px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTgjRuc-BsKY5xX2aLgJ9G6-qVQzccNvANw&s);
+    background-size: cover;
+    background-position: center;
+    align-self: center
+}
+
+.luas-segitiga-form-header {
+    text-align: center;
+}
+
+.input-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-wrapper>input {
+    width: 65%;
+}
+
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.main-contect {
+    display: flex;
+}
+
+.main-contect>aside {
+    flex: 1;
+}
