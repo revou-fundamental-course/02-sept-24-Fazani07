@@ -1,21 +1,37 @@
-/* ini css */
+/* styles.css */
+
+/* Reset dan dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
 .main-header {
     text-align: center;
+    padding: 20px;
+    background-color: #39255E;
+    color: white;
 }
 
 .selection-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
 }
+
 .selection-btn {
-    height: 32px;
-    border:  none;
+    padding: 10px 20px;
+    border: none;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .mustard-color {
@@ -24,59 +40,98 @@
 
 .white-color {
     background-color: white;
-}
-
-.luas-segitiga-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
-    background: #39255E;
-    text-align: center;
-    color: white;
-}
-
-.luas-segitiga-contect {
-    display: flex;
-    flex-direction: column;
-}
-
-.luas-segitiga-img {
-    height: 300px;
-    width: 300px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTgjRuc-BsKY5xX2aLgJ9G6-qVQzccNvANw&s);
-    background-size: cover;
-    background-position: center;
-    align-self: center
-}
-
-.luas-segitiga-form-header {
-    text-align: center;
-}
-
-.input-wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.input-wrapper>input {
-    width: 65%;
-}
-
-input[type=number] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+    color: #000;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
 .main-contect {
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.main-contect>aside {
-    flex: 1;
+.main-contect > aside {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.luas-segitiga-header,
+.keliling-segitiga-header {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #39255E;
+    color: white;
+    text-align: center;
+}
+
+.luas-segitiga-contect,
+.keliling-segitiga-contect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.luas-segitiga-img,
+.keliling-segitiga-img {
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.luas-segitiga-img {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTgjRuc-BsKY5xX2aLgJ9G6-qVQzccNvANw&s);
+}
+
+.keliling-segitiga-img {
+    background-image: url(https://via.placeholder.com/150); /* Ganti dengan URL gambar yang sesuai */
+}
+
+.luas-segitiga-form-header,
+.keliling-segitiga-form-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-wrapper label {
+    margin-bottom: 5px;
+}
+
+.input-wrapper input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F9BE4A;
+}
+
+p#hasilLuas,
+p#hasilKeliling {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 10px 0;
+    font-weight: bold;
 }
