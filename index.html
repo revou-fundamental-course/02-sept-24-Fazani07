@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Katik - Kalkulator Matematik</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,12 +14,14 @@
 
     <main>
         <section class="selection-content">
-            <button href="button" type="button" class="selection-btn mustard-color">Segitiga</button>
-            <button href="button" type="button" class="selection-btn white-color">Jajar Genjang</button>
+            <button id="btnLuasSegitiga" type="button" class="selection-btn white-color">Luas Segitiga</button>
+            <button id="btnKelilingSegitiga" type="button" class="selection-btn white-color">Keliling Segitiga</button>
         </section>
+        
 
     <section class="main-contect">
-        <aside>
+        <!-- Form untuk Luas Segitiga -->
+        <aside id="formLuasSegitiga" style="display: none;">
             <header>
                 <h1 class="luas-segitiga-header">Luas Segitiga</h1>
             </header>
@@ -52,35 +54,39 @@
         </aside>
 
         <!-- Form untuk Keliling Segitiga -->
-        <aside>
+        <aside id="formKelilingSegitiga" style="display: none;">
             <header>
-                <h1 class="keliling-segitiga-header">Luas Segitiga</h1>
+                <h1 class="keliling-segitiga-header">Keliling Segitiga</h1>
             </header>
 
             <article class="keliling-segitiga-contect">
                 <div class="keliling-segitiga-img"></div>
-                <p>Rumus Luas Segitiga</p>
+                <p>Rumus keliling Segitiga: Sisi 1 + Sisi 2 + Sisi 3</p>
             </article>
 
             <hr>
 
-            <form>
+            <form id="kelilingForm">
                 <header>
-                    <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                    <h2 class="keliling-segitiga-form-header">Hitung Keliling Segitiga</h2>
                 </header>
 
                 <div class="input-wrapper">
-                    <label for="panjang-alas">Panjang Alas :</label>
-                    <input type="number" id="panjang-alas">
+                    <label for="sisi1">Sisi 1 (cm):</label>
+                    <input type="number" id="sisi1" required>
                 </div>
                 <div class="input-wrapper">
-                    <label for="tinggi">Tinggi :</label>
-                    <input type="number" id="tinggi">
+                    <label for="sisi2">Sisi 2 (cm):</label>
+                    <input type="number" id="sisi2" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="sisi3">Sisi 3 (cm):</label>
+                    <input type="number" id="sisi3" required>
                 </div>
 
-                <p id="result">Hasil Perhitungan</p>
+                <p id="hasilKeliling">Hasil Perhitungan:</p>
 
-                <button>Hitung</button>
+                <button type="button" id="hitungKelilingBtn">Hitung Keliling</button>
             </form>
         </aside>
     </section>

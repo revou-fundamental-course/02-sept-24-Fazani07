@@ -1,6 +1,5 @@
 /* styles.css */
 
-/* Reset dan dasar */
 * {
     box-sizing: border-box;
 }
@@ -85,11 +84,11 @@ body {
 }
 
 .luas-segitiga-img {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTgjRuc-BsKY5xX2aLgJ9G6-qVQzccNvANw&s);
+    background-image: url(img/rumusluassegitiga.png);
 }
 
 .keliling-segitiga-img {
-    background-image: url(https://via.placeholder.com/150); /* Ganti dengan URL gambar yang sesuai */
+    background-image: url(img/rumuskelilingsegitiga.png);
 }
 
 .luas-segitiga-form-header,
@@ -135,3 +134,35 @@ p#hasilKeliling {
     margin: 10px 0;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    .main-contect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-contect > aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .selection-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .input-wrapper input {
+        padding: 6px;
+    }
+
+    .main-header h1 {
+        font-size: 24px;
+    }
+
+    .main-header p {
+        font-size: 14px;
+    }
+} 
+
